@@ -1,6 +1,8 @@
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using NZWalks.Data;
+using NZWalks.Mappings;
 using NZWalks.Models.Domain;
 using NZWalks.Models.Repositories;
 
@@ -22,6 +24,8 @@ internal class Program
         );
 
         builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
+
+        builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
         var app = builder.Build();
 
