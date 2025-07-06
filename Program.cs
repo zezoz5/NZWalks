@@ -2,6 +2,7 @@ using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using NZWalks.Data;
 using NZWalks.Models.Domain;
+using NZWalks.Models.Repositories;
 
 internal class Program
 {
@@ -19,6 +20,8 @@ internal class Program
         builder.Services.AddDbContext<NZWalksDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalksConnectionString"))
         );
+
+        builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
 
         var app = builder.Build();
 
