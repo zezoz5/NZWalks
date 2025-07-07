@@ -33,8 +33,14 @@ internal class Program
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI();
+
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "NZWalks API v1");
+                options.RoutePrefix = string.Empty;
+            });
         }
+
 
         app.UseHttpsRedirection();
 
