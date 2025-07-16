@@ -1,0 +1,17 @@
+{
+  "background.windowBackgrounds": [],
+  "background.editorBackgrounds": [
+    "c:/Users/hlawe/OneDrive/Pictures/cool/Call_Of_the_Medium.jpeg"
+  ],
+  "background.panelBackgrounds": [
+    "c:/Users/hlawe/OneDrive/Pictures/cool/8944cff8b2415fa6a4e9dc639d9483ef.jpg"
+  ],
+  "background.backgroundOpacity": [0.1, 0.2, 0.1, 0.1],
+  "background.backgroundBlur": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "explorer.compactFolders": false
+}

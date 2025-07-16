@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NZWalks.CustomActionFilters;
 using NZWalks.Data;
 using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
@@ -63,8 +64,10 @@ namespace NZWalks.Controllers
         // Post to create new region
         // POST: https://localhost:7259/api/regions
         [HttpPost]
+        [ValidateModel]
         public async Task<IActionResult> Create([FromBody] CreateRegionRequest createRegionRequestDto)
         {
+
             //Map DTO to Domain Model
             var regionDomainModel = mapper.Map<Region>(createRegionRequestDto);
 
@@ -81,8 +84,10 @@ namespace NZWalks.Controllers
         // PUT: https://localhost:7259/api/regions/{id}
         [HttpPut]
         [Route("{id:guid}")]
+        [ValidateModel]
         public async Task<IActionResult> Update([FromRoute] Guid id, [FromBody] UpdateRegionRequest updateRegionRequest)
         {
+
             // DTO -> DM
             var RegionDM = mapper.Map<Region>(updateRegionRequest);
 
@@ -97,6 +102,7 @@ namespace NZWalks.Controllers
             var RegionDto = mapper.Map<RegionDTO>(RegionDM);
 
             return Ok(RegionDto);
+
         }
 
         [HttpDelete]
