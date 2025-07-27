@@ -13,5 +13,8 @@
     "0",
     "0"
   ],
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "cSpell.words": [
+    "Serilog"
+  ]
 }

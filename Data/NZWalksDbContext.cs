@@ -56,7 +56,7 @@ namespace NZWalks.Data
                 new Region
                 {
                     Id = Guid.Parse("6884f7d7-ad1f-4101-8df3-7a6fa7387d81"),
-                    Name = "Northland",
+                    Name = "NorthLand",
                     Code = "NTL",
                     RegionImageUrl = null
                 },
@@ -96,5 +96,6 @@ namespace NZWalks.Data
         public DbSet<Walk> Walks { get; set; }
         public DbSet<Region> Regions { get; set; }
         public DbSet<Difficulty> Difficulties { get; set; }
+        public DbSet<Image> Images { get; set; }
     }
 }

@@ -170,3 +170,5 @@ D:\NZWalks\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dl
 D:\NZWalks\obj\Debug\net8.0\NZWalks.API.sourcelink.json
 D:\NZWalks\bin\Debug\net8.0\AutoMapper.dll
 D:\NZWalks\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\NZWalks\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\NZWalks\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

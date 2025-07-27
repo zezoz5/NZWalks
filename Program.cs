@@ -1,10 +1,14 @@
+using System.Net.NetworkInformation;
 using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.Extensions.Logging.Console;
 using NZWalks.Data;
 using NZWalks.Mappings;
 using NZWalks.Models.Domain;
 using NZWalks.Models.Repositories;
+using Serilog;
 
 internal class Program
 {
@@ -14,7 +18,10 @@ internal class Program
 
         // Add services to the container.
 
+
+
         builder.Services.AddControllers();
+        builder.Services.AddHttpContextAccessor();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -25,6 +32,7 @@ internal class Program
 
         builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
         builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
+        builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 
         builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
@@ -46,6 +54,12 @@ internal class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
+
+        app.UseStaticFiles(new StaticFileOptions
+        {
+            FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Images")),
+            RequestPath = "/Images"
+        });
 
         app.MapControllers();
 
