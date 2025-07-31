@@ -1,0 +1,2 @@
+2025-07-30 11:10:05.613 +03:00 [WRN] Overriding address(es) 'http://*:0'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-07-30 11:10:05.655 +03:00 [WRN] HTTP/2 is not enabled for [::]:0. The endpoint is configured to use HTTP/1.1 and HTTP/2, but TLS is not enabled. HTTP/2 requires TLS application protocol negotiation. Connections to this endpoint will use HTTP/1.1.

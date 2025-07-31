@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "C#: NZWalks.UI [https]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\NZWalks.UI\\NZWalks.UI.csproj",
+            "launchConfigurationId": "TargetFramework=;https"
+        },
+        {
+            "name": "C#: NZWalks.API [https]",
+            "type": "dotnet",
+            "projectPath": "${workspaceFolder}/NZWalks.API/NZWalks.API.csproj",
+            "request": "launch"
+        }
+        
+    ]
+    ,
+    "compounds": [
+        {
+            "name": "Launch All Projects",
+            "configurations": [
+                "C#: NZWalks.UI [https]",
+                "C#: NZWalks.API [https]"
+            ]
+        }
+    ]
+}
