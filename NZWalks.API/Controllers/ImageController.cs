@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
@@ -19,6 +15,7 @@ namespace NZWalks.Controllers
         {
             this.imageRepository = imageRepository;
         }
+        
         [HttpPost]
         [Route("Upload")]
         // POST: /api/Images/Upload

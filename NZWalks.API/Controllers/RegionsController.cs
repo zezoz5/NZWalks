@@ -1,29 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using NZWalks.CustomActionFilters;
-using NZWalks.Data;
 using NZWalks.Models.Domain;
 using NZWalks.Models.DTO;
 using NZWalks.Models.Repositories;
 
 namespace NZWalks.Controllers
 {
-    //https://localhost:7259/api/regions
+    // https://localhost:7259/api/regions
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class RegionsController : ControllerBase
     {
-        private readonly NZWalksDbContext dbContext;
         private readonly IRegionRepository regionRepository;
         private readonly IMapper mapper;
-        public RegionsController(NZWalksDbContext dbContext, IRegionRepository regionRepository, IMapper mapper)
+        public RegionsController(IRegionRepository regionRepository, IMapper mapper)
         {
-            this.dbContext = dbContext;
             this.regionRepository = regionRepository;
             this.mapper = mapper;
         }
