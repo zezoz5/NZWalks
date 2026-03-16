@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using NZWalks.API.Data;
+using NZWalks.API.Models.Repositories;
 using NZWalks.Data;
 using NZWalks.Mappings;
 using NZWalks.Models.Repositories;
@@ -34,6 +35,7 @@ internal class Program
 
         builder.Services.AddScoped<IRegionRepository, SQLRegionRepository>();
         builder.Services.AddScoped<IWalkRepository, SQLWalkRepository>();
+        builder.Services.AddScoped<ITokenRepository, TokenRepository>();
         builder.Services.AddScoped<IImageRepository, LocalImageRepository>();
 
         builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));

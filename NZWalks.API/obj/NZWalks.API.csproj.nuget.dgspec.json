@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {}
+    "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj": {}
   },
   "projects": {
-    "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj": {
+    "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+        "projectUniqueName": "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj",
         "projectName": "NZWalks.API",
-        "projectPath": "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+        "projectPath": "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj",
         "packagesPath": "C:\\Users\\hlawe\\.nuget\\packages\\",
-        "outputPath": "D:\\NZWalks\\NZWalks.API\\obj\\",
+        "outputPath": "D:\\NZWalks\\NZWalks.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hlawe\\AppData\\Roaming\\NuGet\\NuGet.Config"
