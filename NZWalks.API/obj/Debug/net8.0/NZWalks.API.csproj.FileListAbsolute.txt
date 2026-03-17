@@ -526,11 +526,6 @@ D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.MvcApplicationPartsAssemblyI
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.sourcelink.json
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets.build.json
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets.development.json
-D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets\msbuild.NZWalks.API.Microsoft.AspNetCore.StaticWebAssets.props
-D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets\msbuild.build.NZWalks.API.props
-D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.NZWalks.API.props
-D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NZWalks.API.props
-D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets.pack.json
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\scopedcss\bundle\NZWalks.API.styles.css
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks..A36796ED.Up2Date
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.dll
@@ -538,3 +533,10 @@ D:\NZWalks\NZWalks.API\obj\Debug\net8.0\refint\NZWalks.API.dll
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.pdb
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.genruntimeconfig.cache
 D:\NZWalks\NZWalks.API\obj\Debug\net8.0\ref\NZWalks.API.dll
+D:\NZWalks\NZWalks.API\bin\Debug\net8.0\NZWalks.API.staticwebassets.endpoints.json
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\NZWalks\NZWalks.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json

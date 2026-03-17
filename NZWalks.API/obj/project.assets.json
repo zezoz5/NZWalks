@@ -5539,11 +5539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+      "projectUniqueName": "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj",
       "projectName": "NZWalks.API",
-      "projectPath": "D:\\NZWalks\\NZWalks.API\\NZWalks.API.csproj",
+      "projectPath": "D:\\NZWalks\\NZWalks.api\\NZWalks.API.csproj",
       "packagesPath": "C:\\Users\\hlawe\\.nuget\\packages\\",
-      "outputPath": "D:\\NZWalks\\NZWalks.API\\obj\\",
+      "outputPath": "D:\\NZWalks\\NZWalks.api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hlawe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5569,7 +5569,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -5651,8 +5652,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.412/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
