@@ -24,8 +24,8 @@ namespace NZWalks.API.Controllers
         {
             var identityUser = new IdentityUser
             {
-                UserName = registerRequestDto.UserName,
-                Email = registerRequestDto.UserName
+                UserName = registerRequestDto.Username,
+                Email = registerRequestDto.Username
             };
 
             var identityResult = await userManager.CreateAsync(identityUser, registerRequestDto.Password);
